@@ -30,6 +30,7 @@ An awesome list for collecting awesome lists related to prompt engineering.
 - [Awesome AI-Powered Developer Tools](https://github.com/jamesmurdza/awesome-ai-devtools) - Curated list of AI-powered developer tools.
 - [Open LLMs](https://github.com/eugeneyan/open-llms) - A list of open LLMs available for commercial use.
 - [Awesome Vibe Coding](https://github.com/taskade/awesome-vibe-coding) - A curated list of vibe coding tools, platforms, and resources for building software through natural language prompts.
+- [Guardian Agent Prompts](https://github.com/milkomida77/guardian-agent-prompts) - 49 production-tested system prompts for building multi-agent AI systems. Battle-tested patterns from running 57 agents 24/7.
 
 [x-image]: https://img.shields.io/badge/follow-ihuanluo-black?logo=x
 [pr-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
