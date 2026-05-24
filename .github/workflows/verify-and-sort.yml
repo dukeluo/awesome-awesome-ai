@@ -1,0 +1,66 @@
+name: Verify & Sort Repositories
+
+on:
+  schedule:
+    # Run every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+    # Allow manual triggering
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  verify-and-sort:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-size: '3.11'
+          python-version: '3.11'
+
+      - name: Run Verification and Sorting Script
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/verify_and_sort.py
+
+      - name: Commit and Push Changes
+        run: |
+          if [ -n "$(git status --porcelain README.md)" ]; then
+            echo "Changes detected in README.md. Committing updates..."
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md
+            git commit -m "chore: auto-sort categories and update repository stats [skip ci]"
+            git push
+          else
+            echo "No changes in README.md. Everything is up-to-date."
+          fi
+
+      - name: Open or Update Issue for Verification Failures
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if [ -f scripts/verification_report.md ]; then
+            echo "Verification issues found. Creating/updating issue..."
+            EXISTING_ISSUE=$(gh issue list --search "Repository Verification Report 🚨" --state open --json number --jq '.[0].number')
+            if [ -n "$EXISTING_ISSUE" ]; then
+              echo "Updating existing issue #$EXISTING_ISSUE..."
+              gh issue edit "$EXISTING_ISSUE" --body-file scripts/verification_report.md
+            else
+              echo "Creating a new issue..."
+              gh issue create --title "Repository Verification Report 🚨" --body-file scripts/verification_report.md
+            fi
+          else
+            echo "No verification issues found. Closing any open reports..."
+            EXISTING_ISSUE=$(gh issue list --search "Repository Verification Report 🚨" --state open --json number --jq '.[0].number')
+            if [ -n "$EXISTING_ISSUE" ]; then
+              echo "Closing resolved issue #$EXISTING_ISSUE..."
+              gh issue close "$EXISTING_ISSUE" --comment "All repositories have been verified and are active. Closing report."
+            fi
+          fi
