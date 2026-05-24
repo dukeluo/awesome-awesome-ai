@@ -29,6 +29,8 @@ An awesome list for collecting awesome lists related to AI.
 
 | Resource | Description | Stars | Last Commit |
 |----------|-------------|-------|-------------|
+| [System Prompts & Models of AI Tools](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | A curated collection of system prompts, internal tool configurations, and model instructions of AI tools. | ![stars](https://img.shields.io/github/stars/x1xhlol/system-prompts-and-models-of-ai-tools?style=flat) | ![last commit](https://img.shields.io/github/last-commit/x1xhlol/system-prompts-and-models-of-ai-tools?style=flat) |
+| [awesome-design-md](https://github.com/voltagent/awesome-design-md) | A collection of DESIGN.md files inspired by popular brand design systems for coding agents to generate matching UI. | ![stars](https://img.shields.io/github/stars/voltagent/awesome-design-md?style=flat) | ![last commit](https://img.shields.io/github/last-commit/voltagent/awesome-design-md?style=flat) |
 | [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) | A curated list of awesome .cursorrules files for enhancing the Cursor AI code editor experience. | ![stars](https://img.shields.io/github/stars/PatrickJS/awesome-cursorrules?style=flat) | ![last commit](https://img.shields.io/github/last-commit/PatrickJS/awesome-cursorrules?style=flat) |
 
 ### AI Coding
