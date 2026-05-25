@@ -1,0 +1,43 @@
+name: Weekly Curation Audit Trigger
+
+on:
+  schedule:
+    # Run every Sunday at 8:00 AM in UTC-8 (16:00 UTC)
+    - cron: '0 16 * * 0'
+  workflow_dispatch:
+    # Allow manual triggering
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  create-weekly-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Update Last Audit Timestamp
+        run: |
+          mkdir -p .github
+          echo "Last weekly audit triggered on: $(date -u)" > .github/last-audit.txt
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: weekly automated repository audit"
+          branch: "weekly-audit-pr"
+          delete-branch: true
+          title: "chore: weekly automated repository audit 🚨"
+          body: |
+            This is a weekly automated repository audit PR to trigger AI review and check project status.
+            
+            - **Trigger Time**: ${{ github.event.schedule || 'Manual trigger' }}
+            - **Target Branch**: `main`
+            
+            *CodeRabbit will automatically review this PR and scan the repository context to provide updates and audit findings.*
+          labels: |
+            automated-audit
+            ai-curation
