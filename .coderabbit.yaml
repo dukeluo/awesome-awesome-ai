@@ -22,3 +22,8 @@ reviews:
            - Recommend moving a repository to a more appropriate category if it is misplaced.
            - Ensure the categories themselves remain in alphabetical order in the Table of Contents and in the body.
            - Remind the author to insert the row in sorted order by star count if visible.
+        4. **Weekly Audit Review**:
+           - When reviewing a PR labeled `automated-audit`, go beyond the diff and provide a comprehensive health assessment of the entire awesome list.
+           - Suggest entries that appear outdated, have very low activity, or might belong in a different category.
+           - Check for formatting inconsistencies across all entries.
+           - Report any potential improvements, such as missing descriptions or broken badge URLs.

@@ -63,6 +63,10 @@ An awesome list for collecting awesome lists related to AI.
 | [免费 Prompt Engineering 教程](https://github.com/thinkingjimmy/Learning-Prompt) | 一个免费的 Prompt Engineering 教程，提供从入门到高级的学习资料和案例分析。 | ![stars](https://img.shields.io/github/stars/thinkingjimmy/Learning-Prompt?style=flat) | ![last commit](https://img.shields.io/github/last-commit/thinkingjimmy/Learning-Prompt?style=flat) |
 | [Prompt 编写模式：如何将思维框架赋予机器](https://github.com/phodal/prompt-patterns) | 以设计模式的形式来思考 prompt，一份关于如何将思维框架赋予机器的指南。 | ![stars](https://img.shields.io/github/stars/phodal/prompt-patterns?style=flat) | ![last commit](https://img.shields.io/github/last-commit/phodal/prompt-patterns?style=flat) |
 
+---
+
+_Last audited: 2026-05-25_
+
 [x-image]: https://img.shields.io/badge/follow-ihuanluo-black?logo=x
 [pr-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
 [license-image]: https://img.shields.io/github/license/dukeluo/awesome-awesome-ai
