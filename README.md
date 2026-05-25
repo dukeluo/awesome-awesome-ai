@@ -65,7 +65,7 @@ An awesome list for collecting awesome lists related to AI.
 
 ---
 
-_Last audited: 2026-05-25_
+_Last audited: 2026-05-25 14:18 UTC_
 
 [x-image]: https://img.shields.io/badge/follow-ihuanluo-black?logo=x
 [pr-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
