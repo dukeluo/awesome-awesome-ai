@@ -25,7 +25,7 @@ jobs:
           set -e
 
           README="README.md"
-          AUDIT_DATE=$(date -u +"%Y-%m-%d")
+          AUDIT_DATE=$(date -u +"%Y-%m-%d %H:%M UTC")
 
           TOTAL=0
           DEAD_COUNT=0
