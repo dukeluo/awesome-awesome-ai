@@ -1,32 +1,24 @@
-# CodeRabbit Configuration File - Awesome Awesome AI
-language: "zh-CN" # Respond in Chinese by default since the curation language is bilingual/Chinese
-tone: "professional"
+# yaml-language-server: $schema=https://coderabbit.ai/integrations/schema.v2.json
+language: "zh-CN"
+tone_instructions: "Please maintain a professional, helpful, and objective tone."
 
-# AI Curation & Review Settings
 reviews:
-  profile: "professional"
-  request_reviews_by_default: true
+  profile: "assertive"
   high_level_summary: true
-  auto_copy_paste_for_all_comments: false
-  review_trivial_files: false
-  
-  # Custom rules for curating the awesome-awesome-ai list
-  instructions: |
-    You are an expert AI curator reviewing changes to the "Awesome Awesome AI" list. Please enforce these rules on every pull request:
-    1. **Format Validation**:
-       - Ensure new items are added as rows in Markdown tables.
-       - Each table must have 4 columns: | Resource | Description | Stars | Last Commit |
-       - Stars column must use shields.io: `![stars](https://img.shields.io/github/stars/owner/repo?style=flat)`
-       - Last Commit column must use shields.io: `![last commit](https://img.shields.io/github/last-commit/owner/repo?style=flat)`
-    2. **Content Curation & Grammar**:
-       - Descriptions must be concise, professional, and matching the existing bilingual tone (smooth Chinese/English).
-       - Eliminate marketing fluff or overly promotional language from descriptions.
-    3. **Categorization & Sorting**:
-       - Recommending moving a repository to a more appropriate category if it is misplaced.
-       - Ensure the categories themselves remain in alphabetical order in the Table of Contents and in the body.
-       - Remind the author to insert the row in sorted order by star count if visible.
-
-# Excluded Files
-exclude:
-  - ".idea/**"
-  - ".gitignore"
+  collapse_walkthrough: true
+  path_instructions:
+    - path: "README.md"
+      instructions: |
+        You are an expert AI curator reviewing changes to the "Awesome Awesome AI" list. Please enforce these rules on every pull request:
+        1. **Format Validation**:
+           - Ensure new items are added as rows in Markdown tables.
+           - Each table must have 4 columns: | Resource | Description | Stars | Last Commit |
+           - Stars column must use shields.io: `![stars](https://img.shields.io/github/stars/owner/repo?style=flat)`
+           - Last Commit column must use shields.io: `![last commit](https://img.shields.io/github/last-commit/owner/repo?style=flat)`
+        2. **Content Curation & Grammar**:
+           - Descriptions must be concise, professional, and matching the existing bilingual tone (smooth Chinese/English).
+           - Eliminate marketing fluff or overly promotional language from descriptions.
+        3. **Categorization & Sorting**:
+           - Recommend moving a repository to a more appropriate category if it is misplaced.
+           - Ensure the categories themselves remain in alphabetical order in the Table of Contents and in the body.
+           - Remind the author to insert the row in sorted order by star count if visible.
