@@ -45,6 +45,7 @@ An awesome list for collecting awesome lists related to AI.
 | [Open LLMs](https://github.com/eugeneyan/open-llms) | A list of open LLMs available for commercial use. | ![stars](https://img.shields.io/github/stars/eugeneyan/open-llms?style=flat) | ![last commit](https://img.shields.io/github/last-commit/eugeneyan/open-llms?style=flat) |
 | [Awesome ChatGPT](https://github.com/humanloop/awesome-chatgpt) | Curated list of awesome tools, demos, docs for ChatGPT and GPT-3. | ![stars](https://img.shields.io/github/stars/humanloop/awesome-chatgpt?style=flat) | ![last commit](https://img.shields.io/github/last-commit/humanloop/awesome-chatgpt?style=flat) |
 | [Awesome GPT-3](https://github.com/elyase/awesome-gpt3) | A collection of demos and articles about the OpenAI GPT-3 API. | ![stars](https://img.shields.io/github/stars/elyase/awesome-gpt3?style=flat) | ![last commit](https://img.shields.io/github/last-commit/elyase/awesome-gpt3?style=flat) |
+| [Awesome Higgsfield](https://github.com/jutsuhq/awesome-higgsfield) | A curated list of tools, SDKs, MCP servers, agent skills and apps for the Higgsfield AI video and image platform. | ![stars](https://img.shields.io/github/stars/jutsuhq/awesome-higgsfield?style=flat) | ![last commit](https://img.shields.io/github/last-commit/jutsuhq/awesome-higgsfield?style=flat) |
 
 ## Prompt Engineering
 
