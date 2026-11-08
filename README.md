@@ -60,13 +60,12 @@ An awesome list for collecting awesome lists related to AI.
 | Resource | Description | Stars | Last Commit |
 |----------|-------------|-------|-------------|
 | [prompts.chat](https://github.com/f/prompts.chat) | An open-source library for sharing, discovering, and self-hosting prompts for modern AI chat models. | ![stars](https://img.shields.io/github/stars/f/prompts.chat?style=flat) | ![last commit](https://img.shields.io/github/last-commit/f/prompts.chat?style=flat) |
-| [ChatGPT 中文调教指南](https://github.com/PlexPt/awesome-chatgpt-prompts-zh) | 一个收集了关于 ChatGPT 中文调教的指南和优秀的调教案例的资源列表。 | ![stars](https://img.shields.io/github/stars/PlexPt/awesome-chatgpt-prompts-zh?style=flat) | ![last commit](https://img.shields.io/github/last-commit/PlexPt/awesome-chatgpt-prompts-zh?style=flat) |
 | [Awesome Nano Banana Pro Prompts](https://github.com/YouMind-OpenLab/awesome-nano-banana-pro-prompts) | Curated Nano Banana Pro prompts with multilingual examples and preview images. | ![stars](https://img.shields.io/github/stars/YouMind-OpenLab/awesome-nano-banana-pro-prompts?style=flat) | ![last commit](https://img.shields.io/github/last-commit/YouMind-OpenLab/awesome-nano-banana-pro-prompts?style=flat) |
 | [PromptBin](https://github.com/mattnigh/ChatGPT-Free-Prompt-List) | An open-source prompt library and manager for organizing reusable prompts for LLMs and agents. | ![stars](https://img.shields.io/github/stars/mattnigh/ChatGPT-Free-Prompt-List?style=flat) | ![last commit](https://img.shields.io/github/last-commit/mattnigh/ChatGPT-Free-Prompt-List?style=flat) |
 
 ---
 
-_Last audited: 2026-07-16_
+_Last audited: 2026-11-08 20:19 UTC_
 
 [x-image]: https://img.shields.io/badge/follow-ihuanluo-black?logo=x
 [pr-image]: https://img.shields.io/badge/PRs-welcome-brightgreen.svg
